@@ -1,0 +1,146 @@
+/* ----- Loan form ----- */
+
+.form-loan {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.loan-inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-loan input,
+.info-inputs,
+.modal-form input,
+select {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-inputs input,
+.modal-form input,
+select {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.ranges {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, rgb(23, 190, 187) 60%, rgb(23, 190, 187) 60%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 12px;
+}
+
+.form-control-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #17bebb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form-control-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #17bebb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fee-to-pay {
+    display: inline-block;
+    border: 3px solid #592cc3;
+    padding: 12px;
+    border-radius: .5rem;
+    color: #592cc3;
+    width: 50%;
+    text-align: center !important;
+}
+
+.fee-to-pay h5 {
+    font-size: medium;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/* ----- Modal -----*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #F4F4F4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1.5s;
+}
+
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+}
+
+
+/* - Modal Form - */
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    width: 50% !important;
+}
